@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>online-shopping-app</display-name>
+  
+  <mime-mapping>
+    <extension>css</extension>
+    <mime-type>text/css</mime-type>
+  </mime-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout> <!-- 30 minutes -->
+</session-config>
+  
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>LoginFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/user-protected/*</url-pattern>  <!-- Protect dashboard -->
+</filter-mapping>
+	<filter>
+    <filter-name>AuthenticationFilterAdmin</filter-name>
+    <filter-class>AdminFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilterAdmin</filter-name>
+    <url-pattern>/admin-protected/*</url-pattern>  <!-- Protect dashboard -->
+</filter-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</web-app>

@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* Category Menu */
+.category-menu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-menu a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-menu a:hover {
+    background-color: #87cefa;
+    color: white;
+}
+
+.category-menu a.active {
+    background-color: #1e90ff;
+    color: white;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Item */
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    position: relative; /* Make it a positioned element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.product-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Product Title and Description */
+.product-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    color: #666;
+}
+
+/* Action Buttons Container */
+.product-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+/* Action Buttons Styles */
+.action-button-edit,
+.action-button-remove {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.action-button-edit:hover {
+    color: #eccf5e; /* Green for edit */
+}
+
+.action-button-remove:hover {
+    color: #dc3545; /* Red for delete */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .category-menu a {
+        padding: 8px 12px;
+        margin: 0 5px;
+    }
+    
+    .product-item h2 {
+        font-size: 16px;
+    }
+
+    .product-actions {
+        top: 5px;
+        right: 5px;
+    }
+
+    .action-button-edit,
+    .action-button-remove {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,129 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #2d2d2d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3efff;
+    padding: 20px;
+    border-bottom: 2px solid #cfd8e3;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #2b3a67;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a7ab7;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1e5f99;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.dashboard-options {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-options h2 {
+    margin-bottom: 18px;
+    color: #365a74;
+    font-size: 22px;
+}
+
+.dashboard-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-options ul li {
+    margin: 12px 0;
+}
+
+.dashboard-options ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.dashboard-options ul li a:hover {
+    color: #1e5f99;
+}
+
+/* Hover Effect for Dashboard Cards */
+.dashboard-options:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e3efff;
+    text-align: center;
+    padding: 15px;
+    color: #4a4a4a;
+    border-top: 2px solid #cfd8e3;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .dashboard-options {
+        width: 90%;
+    }
+}

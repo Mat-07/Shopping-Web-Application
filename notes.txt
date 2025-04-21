@@ -1,0 +1,10 @@
+Categories
+----------	
+	1. Shirt
+	2. T-shirt
+	3. Jean
+	4. Cotton pants
+	5. Shorts
+	6. Over-sized T-Shirt
+	7. track pants
+	8. Sweat shirts
